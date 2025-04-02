@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="navbar-right">
+                    <p><a href="#hero-section">Home</a></p>
+                    <p><a href="#recipes">Recipes</a></p>
+                    <p><a href="#AboutUs">About Us</a></p>
+                    <p><a href="#Contact">Contact</a></p>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section">
+           <div class="hero-left-section">
+            <h1>Bringing Flavors to Life!</h1>
+            <p>Welcome to Foody Crush, where we turn everyday ingredients into extraordinary dishes! Whether you're a seasoned chef or just starting your culinary journey, our easy-to-follow recipes will help you create mouthwatering meals that bring warmth and joy to your table. Explore a variety of cuisines, from traditional classics to modern twists, all crafted to satisfy your taste buds. Join us and discover how simple it is to bring flavors to life, one delicious dish at a time!
+            </p></div>
+            <div class="hero-right-section">
+                <img src="samosa.webp" alt="">
+            </div>
+        </section>
+        <section class="recipes" id="recipes"> 
+            <h1>RECIPE</h1>
+            <div class="search-section">
+                <input type="text" placeholder="Enter category" id="searchText">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="recipe" id="recipe" >
+    
+            </div>
+        </section>
+        <section id="AboutUs" class="AboutUs">
+            <h1>About Us</h1>
+            <div class="AboutUsText"><p>Welcome to <span>Foody Crush</span>, where we bring you <span>easy, delicious, and wholesome recipes</span> designed for every skill level. Our journey began with a passion for cooking and a desire to share simple yet flavorful dishes that anyone can make at home. Whether you're looking for <span> quick weekday meals, festive treats, or healthy options, our step-by-step guides</span> ensure that cooking becomes a fun and rewarding experience.
+            Our mission is to inspire confidence in the kitchen by <span>offering a variety of recipes — from traditional favorites to international delights</span>. We believe that good food brings people together, and we’re excited to be part of your culinary adventures.<span> Explore, experiment, and make every meal memorable with Foody Crush!</span></p></div>
+        </section>
+    <hr>
+        <section class="Contact" id="Contact">
+            <h1>Contact Us</h1>
+            <p>Have any suggestions or facing an issue? We’re here to listen and improve — reach out to us now!" 😊</p>
+            <form action="mailto:bgulwdhar@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+          
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

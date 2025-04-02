@@ -1,0 +1,35 @@
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: orange;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wholeRecipe{
+    height: 50%;
+    width: 80%;
+}
+ @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+.wholeRecipe h2{
+    font-size: 80px;
+    -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+}
+.wholeRecipe p{
+    font-size: 20px;
+}
+.wholeRecipe i{
+    font-size: 20px;
+}
+.wholeRecipe img{
+    height: 10%;
+    transform: translateX(150%);
+    box-shadow: 0 0 10px green;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    -webkit-animation:text-focus-in 5s cubic-bezier(.785,.135,.15,.86) both;animation:text-focus-in 2s cubic-bezier(.785,.135,.15,.86) both
+}
